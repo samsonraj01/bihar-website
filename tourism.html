@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bihar Tourism</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="hero" style="background-image: url('images/tourism.jpg');">
+        <div class="overlay">
+            <div class="hero-content small">
+                <h1>Tourism in Bihar</h1>
+                <p>From Bodh Gaya to Nalanda, explore Bihar’s ancient sites.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="interactive-section">
+            <img src="images/tourism.jpg" alt="Bihar Tourism" class="main-image clickable" onclick="toggleDetails('tourism-details')" />
+            <div id="tourism-details" class="hidden-detail">
+                <p>Bihar is home to historical sites like Bodh Gaya (Buddha’s enlightenment), Nalanda (ancient university), and Rajgir. It's a spiritual and cultural hotspot.</p>
+            </div>
+        </section>
+
+        <footer class="navigation">
+            <a href="food.html" class="btn">← Back</a>
+            <a href="index.html" class="btn">🏠 Home</a>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

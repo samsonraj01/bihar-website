@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bihar Culture</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="hero" style="background-image: url('images/culture.jpg');">
+        <div class="overlay">
+            <div class="hero-content small">
+                <h1>Culture of Bihar</h1>
+                <p>Discover Bihar’s folk traditions, festivals, and crafts.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="interactive-section">
+            <img src="images/culture.jpg" alt="Bihar Culture" class="main-image clickable" onclick="toggleDetails('culture-details')" />
+            <div id="culture-details" class="hidden-detail">
+                <p>Bihar’s culture is rich with classical music, Madhubani painting, folk dances, and celebrations like Chhath Puja. The lifestyle is rooted in spirituality and tradition.</p>
+            </div>
+        </section>
+
+        <footer class="navigation">
+            <a href="index.html" class="btn">← Home</a>
+            <a href="food.html" class="btn">Next →</a>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bihar Food</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="hero" style="background-image: url('images/food.jpg');">
+        <div class="overlay">
+            <div class="hero-content small">
+                <h1>Food of Bihar</h1>
+                <p>Spicy, soulful, and satisfying — taste Bihar on a plate.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="interactive-section">
+            <img src="images/food.jpg" alt="Bihar Food" class="main-image clickable" onclick="toggleDetails('food-details')" />
+            <div id="food-details" class="hidden-detail">
+                <p>Popular dishes include Litti Chokha, Sattu Paratha, Dal Pitha, and desserts like Khaja and Thekua. Food in Bihar reflects simplicity and deep-rooted flavors.</p>
+            </div>
+        </section>
+
+        <footer class="navigation">
+            <a href="culture.html" class="btn">← Back</a>
+            <a href="tourism.html" class="btn">Next →</a>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
